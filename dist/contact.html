@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Palanquin:100,400,600,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Contact Me | Web Developer & UI/UX Designer</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">
+          &nbsp;
+        </span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="about.html" class="navigation__link"
+              ><span>01</span>About</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="contact.html" class="navigation__link"
+              ><span>02</span>Contact</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="work.html" class="navigation__link"><span>03</span>Work</a>
+          </li>
+
+          <li class="navigation__item">
+            <a href="Resume.pdf" class="navigation__link"
+              ><span>04</span>Resume</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="index.html" class="navigation__link"
+              ><span>05</span>Home</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Header -->
+    <header id="header-inner">
+      <div class="container">
+        <nav id="main-nav">
+          <img src="img/logo.png" alt="My Portfolio" id="logo" />
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section A: Contact Form -->
+    <section id="contact-a" class="text-center py-3">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="bottom-line"></div>
+        <p class="lead">Here is how you can reach me</p>
+        <form id="contact_template">
+          <input type="hidden" name="contact_number" />
+          <div class="text-fields">
+            <input
+              type="text"
+              class="text-input name-input"
+              placeholder="Name"
+              name="user_name"
+              id="user_name"
+            />
+            <input
+              type="email"
+              class="text-input email-input"
+              placeholder="Email Address"
+              name="user_email"
+              id="user_email"
+            />
+            <textarea
+              class="text-input message-input"
+              placeholder="Enter Message"
+              name="message"
+              id="message"
+            ></textarea>
+            <div>
+              <div
+                class="g-recaptcha "
+                data-sitekey="6LfoGNUUAAAAAGLHI62b2RGxQDhEZlEFOCVC2wUk"
+                id="html_element"
+              ></div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-dark">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section B: Contact Info -->
+    <section id="contact-b" class="py-3 bg-dark">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope fa-2x"></i>
+            <h3>Email</h3>
+            <p>Maher.srouji1@gmail.com</p>
+          </div>
+          <div>
+            <i class="fas fa-phone fa-2x"></i>
+            <h3>Phone</h3>
+            <p>03-602910</p>
+          </div>
+          <div>
+            <i class="fas fa-address-card fa-2x"></i>
+            <h3>Address</h3>
+            <p>Lebanon, Beirut</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section C: Tagline -->
+    <section id="contact-c" class="bg-main py-4">
+      <div class="container">
+        <h1>Let's Start Your Next Project</h1>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>Copyright &copy; 2020. All Rights Reserved</p>
+        <div class="social">
+          <a href="https://github.com/MaherSerjio"
+            ><svg class="footer__icon">
+              <use xlink:href="img/sprite.svg.svg#icon-github"></use>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/mahersrouji">
+            <svg class="footer__icon">
+              <use
+                xlink:href="img/sprite.svg.svg#icon-linkedin-with-circle"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+      async
+      defer
+    ></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+      async
+      defer
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
