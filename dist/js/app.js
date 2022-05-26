@@ -27,7 +27,6 @@ function menuHandler() {
     }
   }
 }
-
 ///////////////////////////////////////////////////////////////
 emailjs.init("user_yIGHRgRcEHaN8aR5kQyFN");
 
